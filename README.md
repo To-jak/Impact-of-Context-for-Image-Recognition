@@ -40,7 +40,18 @@ Images of cats and dogs will be shown to an observer. **The program retrieves ra
   
 For an observer, the experience takes place in two steps.  
   
-### Observation of an image without context  
+### 1. Observation of an image without context  
   
 At this stage, the observer isn’t aware of what he is going  to observe. A first image in its lowest resolution (1 pixel) is presented to the observer. He can either iteratively increase the resolution of the image, or validate the fact that he can correctly name what he sees in the image. The observer will therefore gradually increase the resolution until he recognizes the information contained in the image. This first chosen resolution is the **image recognition resolution without context**.  
   
+### 2. Classification task of images with context provided  
+  
+The observer is then informed of a context in which the following images will be observed: this is a cat and dog classification task.  
+  
+![Raising context awarness](./images/context_awarness.PNG)  
+  
+Other images are then presented to the observer. For each of them, the resolution is initially minimal (1 pixel). Like in the first part, the observer can gradually increase the resolution. When he is confident enough about what he can observe in the image, he will be able to classify it. This task of classification is therefore carried out with an “**image recognition resolution with context**". If the observer classifies enough images correctly, his results can be taken into account and an “**average image recognition resolution with context**” is obtained.  
+  
+### Expected Results  
+  
+Following the idea of conditional complexity presented at the beginning, it is expected that the resolution needed to retrieve the information contained in the image without context will be higher than the average resolution needed in the situation where a context has been provided to the observer.  
