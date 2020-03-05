@@ -55,3 +55,18 @@ Other images are then presented to the observer. For each of them, the resolutio
 ### Expected Results  
   
 Following the idea of conditional complexity presented at the beginning, it is expected that the resolution needed to retrieve the information contained in the image without context will be higher than the average resolution needed in the situation where a context has been provided to the observer.  
+  
+## Results  
+  
+For the different people I gave the test to, the results were pretty much in line with the expected results. You can see an example of these results below.  
+  
+![Results Example](./images/results.PNG)  
+  
+It can be seen that the resolution needed to recognize the information in the first image is clearly more important than the following resolutions. With some context, we've reduced the description complexity of the images for the classification task!  
+  
+For about ten people and by taking into account only the results with a precision higher than 0.8 in the classification task, I obtained the following average results:  
+  
+|                          | Without Context | With Context  |
+| ------------------------ |:---------------:|:-------------:|
+| Average Image Resolution | 44 x 44 | 28 x 28 |
+| Average Image Complexity | 5808 bytes | 2352 bytes |
