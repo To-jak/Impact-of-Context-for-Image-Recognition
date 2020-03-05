@@ -6,6 +6,8 @@ Can this concept be applied to image recognition?
   
 I did a quick experiment to try to highlight this process in the context of image recognition.  
   
+![Squirrel](./images/squirrel.gif)  
+  
 ## Reminder: Conditional Complexity
 The complexity of description (called also Kolmogorov complexity) is the minimal number of information bits needed to describe a given object.  
   
