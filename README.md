@@ -42,6 +42,8 @@ For an observer, the experience takes place in two steps.
   
 ### 1. Observation of an image without context  
   
+![Kitten](./images/cat.gif)  
+  
 At this stage, the observer isn’t aware of what he is going  to observe. A first image in its lowest resolution (1 pixel) is presented to the observer. He can either iteratively increase the resolution of the image, or validate the fact that he can correctly name what he sees in the image. The observer will therefore gradually increase the resolution until he recognizes the information contained in the image. This first chosen resolution is the **image recognition resolution without context**.  
   
 ### 2. Classification task of images with context provided  
