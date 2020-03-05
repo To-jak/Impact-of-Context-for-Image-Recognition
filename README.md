@@ -54,6 +54,8 @@ The observer is then informed of a context in which the following images will be
   
 Other images are then presented to the observer. For each of them, the resolution is initially minimal (1 pixel). Like in the first part, the observer can gradually increase the resolution. When he is confident enough about what he can observe in the image, he will be able to classify it. This task of classification is therefore carried out with an “**image recognition resolution with context**". If the observer classifies enough images correctly, his results can be taken into account and an “**average image recognition resolution with context**” is obtained.  
   
+![Classification Task](./images/classification.gif)  
+  
 ### Expected Results  
   
 Following the idea of conditional complexity presented at the beginning, it is expected that the resolution needed to retrieve the information contained in the image without context will be higher than the average resolution needed in the situation where a context has been provided to the observer.  
