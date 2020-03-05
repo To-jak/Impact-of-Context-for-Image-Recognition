@@ -13,3 +13,45 @@ With this definition, we talk about conditional complexity when we allow the use
   
 The more information in the context, the lower the description complexity of the object. On the contrary, with fewer context, the description will be more complex.  
 
+![Importance of Context](./images/importance_of_context.PNG)  
+  
+## Description complexity for an image  
+
+I’ve been trying to transpose this phenomenon to image recognition by human. I started by defining the information contained in an image for my experiment. I defined it as follows:  
+  
+**Information in the image**: name of the element represented in the image.  
+  
+![Information in the image](./images/squirrel.PNG)  
+  
+I therefore focused on images that contain only one recognizable subject. Once we have defined the information that can be contained in an image, we can define the complexity of the description of that image:  
+
+**Description complexity**: size in bytes of the image encoded with the minimum resolution to be correctly named.  
+  
+![Resolution and Complexity](./images/resolution_and_complexity.PNG)  
+  
+**Note**: *the aim of the experiment is not to achieve lossless compression of the original image. We remind you that here the information contained in the image is not the pixels of the original image, but the name of the element contained in the image.*  
+  
+With these two definitions, we will look at the impact of context on the description complexity of images. If we draw a parallel with conditional complexity, a larger context about the information that may be contained in an image should result in a lower description for this image, and therefore a lower resolution. On the other hand, without any context provided for an observer, one would need a higher resolution to be able to name correctly what is contained in the image.  
+  
+
+## The Experiment  
+  
+Images of cats and dogs will be shown to an observer. **The program retrieves random images from the internet, so that the viewer will normally never have seen any of these images**.  
+  
+For an observer, the experience takes place in two steps.  
+  
+### 1. Observation of an image without context  
+  
+At this stage, the observer isn’t aware of what he is going  to observe. A first image in its lowest resolution (1 pixel) is presented to the observer. He can either iteratively increase the resolution of the image, or validate the fact that he can correctly name what he sees in the image. The observer will therefore gradually increase the resolution until he recognizes the information contained in the image. This first chosen resolution is the **image recognition resolution without context**.  
+  
+### 2. Classification task of images with context provided  
+  
+The observer is then informed of a context in which the following images will be observed: this is a cat and dog classification task.  
+  
+![Raising context awarness](./images/context_awarness.PNG)  
+  
+Other images are then presented to the observer. For each of them, the resolution is initially minimal (1 pixel). Like in the first part, the observer can gradually increase the resolution. When he is confident enough about what he can observe in the image, he will be able to classify it. This task of classification is therefore carried out with an “**image recognition resolution with context**". If the observer classifies enough images correctly, his results can be taken into account and an “**average image recognition resolution with context**” is obtained.  
+  
+### Expected Results  
+  
+Following the idea of conditional complexity presented at the beginning, it is expected that the resolution needed to retrieve the information contained in the image without context will be higher than the average resolution needed in the situation where a context has been provided to the observer.  
