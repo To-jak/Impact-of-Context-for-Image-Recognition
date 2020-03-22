@@ -1,4 +1,4 @@
-# Quick experiment: Impact of Context for Image Recognition
+# Impact of Context for Image Recognition
   
 In [Kolmogorov's sense of complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity), conditional complexity allows to take some background knowledge into account for description complexity.  
   
